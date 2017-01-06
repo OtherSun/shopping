@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shoping.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/navigation_linearlayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999"></LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/main_tab_RadioButtom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home_RadioButton"
+                style="@style/main_tab_RadioButton"
+                android:checked="true"
+                android:drawableTop="@drawable/main_tab_home"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/refresh_RadioButton"
+                style="@style/main_tab_RadioButton"
+                android:drawableTop="@drawable/main_tab_news"
+                android:text="上新" />
+
+            <RadioButton
+                android:id="@+id/shop_RadioButton"
+                style="@style/main_tab_RadioButton"
+                android:drawableTop="@drawable/main_tab_shop"
+                android:text="海淘" />
+
+            <RadioButton
+                android:id="@+id/research_RadioButton"
+                style="@style/main_tab_RadioButton"
+                android:drawableTop="@drawable/main_tab_classification"
+                android:text="搜索" />
+
+            <RadioButton
+                android:id="@+id/me_RadioButton"
+                style="@style/main_tab_RadioButton"
+                android:drawableTop="@drawable/main_tab_me"
+                android:text="个人中心" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_Fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_linearlayout_container" />
+</RelativeLayout>

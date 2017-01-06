@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shoping.widget.DropZoomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personal_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@mipmap/bg_personal_user" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/login_head_SimpleDraweeView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_twenty"
+                fresco:placeholderImage="@drawable/ic_default_avatar"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                style="@style/personal_login_name"
+                android:text="未登录" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/personal_mine_order"
+                    android:text="我的订单" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看全部"
+                    android:textColor="@color/fourGray" />
+
+                <ImageView
+                    style="@style/personal_check_more"
+                    android:background="@mipmap/ic_check_more" />
+            </LinearLayout>
+
+            <View style="@style/personal_cut_off_rule" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/personal_mine_order_state"
+                    android:drawableTop="@mipmap/ic_personal_pending_pay"
+                    android:text="待付款" />
+
+                <RadioButton
+                    style="@style/personal_mine_order_state"
+                    android:drawableTop="@mipmap/ic_puzzle_group"
+                    android:text="待成团" />
+
+                <RadioButton
+                    style="@style/personal_mine_order_state"
+                    android:drawableTop="@mipmap/ic_to_be_shipped"
+                    android:text="待发货" />
+
+                <RadioButton
+                    style="@style/personal_mine_order_state"
+                    android:drawableTop="@mipmap/ic_receipt_of_goods"
+                    android:text="待收款" />
+
+                <RadioButton
+                    style="@style/personal_mine_order_state"
+                    android:drawableTop="@mipmap/ic_to_be_comment"
+                    android:text="待评价" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_square" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/personal_mine_order_state"
+                android:drawableTop="@mipmap/ic_message"
+                android:text="我的消息" />
+
+            <RadioButton
+                style="@style/personal_mine_order_state"
+                android:drawableTop="@mipmap/ic_coupon"
+                android:text="我的优惠劵" />
+
+            <RadioButton
+                style="@style/personal_mine_order_state"
+                android:drawableTop="@mipmap/ic_refunds"
+                android:text="退款/售后" />
+
+            <RadioButton
+                style="@style/personal_mine_order_state"
+                android:drawableTop="@mipmap/ic_group"
+                android:text="我的拼团" />
+
+
+        </LinearLayout>
+
+
+        <View style="@style/personal_cut_off_square" />
+
+        <LinearLayout
+            style="@style/width_match_height_wrap"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/personal_mine_setting_TextView"
+                android:background="@mipmap/ic_lottery" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的抽奖"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/personal_check_more"
+                android:background="@mipmap/ic_check_more" />
+
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_rule" />
+
+        <LinearLayout
+            style="@style/width_match_height_wrap"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/personal_mine_setting_TextView"
+                android:background="@mipmap/ic_likes" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的收藏"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/personal_check_more"
+                android:background="@mipmap/ic_check_more" />
+
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_rule" />
+
+        <LinearLayout
+            style="@style/width_match_height_wrap"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/personal_mine_setting_TextView"
+                android:background="@mipmap/ic_free_order" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的免单卷"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/personal_check_more"
+                android:background="@mipmap/ic_check_more" />
+
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_rule" />
+
+        <LinearLayout
+            style="@style/width_match_height_wrap"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/personal_mine_setting_TextView"
+                android:background="@mipmap/ic_address" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收货地址"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/personal_check_more"
+                android:background="@mipmap/ic_check_more" />
+
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_rule" />
+
+        <LinearLayout
+            style="@style/width_match_height_wrap"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/personal_mine_setting_TextView"
+                android:background="@mipmap/ic_settings" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/personal_check_more"
+                android:background="@mipmap/ic_check_more" />
+
+        </LinearLayout>
+
+        <View style="@style/personal_cut_off_rule" />
+
+    </LinearLayout>
+
+</com.shoping.widget.DropZoomScrollView>

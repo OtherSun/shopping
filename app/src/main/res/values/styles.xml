@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="width_wrap_height_match">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="width_match_height_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="width_weight_height_wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="personal_login_name" parent="wrap_wrap">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_toRightOf">@id/login_head_SimpleDraweeView</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="personal_mine_order" parent="width_weight_height_wrap">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:padding">@dimen/padding_ten</item>
+    </style>
+
+    <style name="personal_check_more" parent="wrap_wrap">
+        <item name="android:layout_marginLeft">@dimen/padding_fifteen</item>
+        <item name="android:layout_marginRight">@dimen/padding_fifteen</item>
+    </style>
+
+    <style name="personal_cut_off_rule">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">@dimen/padding_ten</item>
+        <item name="android:background">@color/fourGray</item>
+    </style>
+
+    <style name="personal_cut_off_square">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/oneGray</item>
+    </style>
+
+    <style name="personal_mine_order_state" parent="width_weight_height_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/padding_five</item>
+        <item name="android:background">#0000</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@drawable/personal_text_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/padding_ten</item>
+        <item name="android:paddingBottom">@dimen/padding_ten</item>
+    </style>
+
+    <style name="personal_mine_setting_TextView" parent="wrap_wrap">
+        <item name="android:layout_margin">@dimen/padding_fifteen</item>
+
+
+    </style>
+
+</resources>
